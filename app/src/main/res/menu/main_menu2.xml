@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" >
+        <item
+            android:icon="@drawable/ic_baseline_home_24"
+            android:id="@+id/nav_home"
+            android:title="Home" ></item>
+        <item
+            android:icon="@drawable/about"
+            android:id="@+id/nav_about"
+            android:title="About" />
+
+
+    </group>
+    <item android:title="Profile">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/login"
+                    android:id="@+id/nav_login"
+                    android:title="Login" />
+                <item
+                    android:icon="@drawable/logout"
+                    android:id="@+id/nav_logout"
+                    android:title="logout" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/attendance"
+                    android:id="@+id/nav_Attendance"
+                    android:title="View Attendance" />
+                <item
+                    android:icon="@drawable/ic_baseline_note_add_24"
+                    android:id="@+id/nav_NoticeBoard"
+                    android:title="Add Notice" />
+                <item
+                    android:icon="@drawable/ic_baseline_nights_stay_25"
+                    android:id="@+id/nav_NightOut"
+                    android:title="View NightOuts" />
+                <item
+                    android:icon="@drawable/ic_baseline_poll_24"
+                    android:id="@+id/nav_Poll"
+                    android:title="Select Fest Menu" />
+                <item
+                    android:icon="@drawable/complaint"
+                    android:id="@+id/nav_Complaint"
+                    android:title="View Complaints" />
+                <item
+                    android:icon="@drawable/complaint"
+                    android:id="@+id/nav_Profile"
+                    android:title="View Profile" />
+                <item
+                    android:icon="@drawable/result"
+                    android:id="@+id/nav_Suggestion"
+                    android:title="View Suggestions" />
+                <item
+                    android:icon="@drawable/result"
+                    android:id="@+id/nav_PollResult"
+                    android:title="View Fest Poll" />
+
+
+            </group>
+        </menu>
+    </item>
+</menu>

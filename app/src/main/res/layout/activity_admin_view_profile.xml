@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Initial.MainActivity"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Initial.MainActivity"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="12dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"
+               android:textColor="@color/colorAccent">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:textSize="8sp"
+                    android:transitionName="logo_text"
+                    android:text="FirstName"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Midname"
+                    android:textSize="8sp"
+                    android:transitionName="logo_text">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Lastname"
+                    android:textSize="8sp"
+                    android:transitionName="logo_text">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_weight="0.31"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/underline"
+                    android:textColor="#000000"
+                   >
+
+
+                </TextView>
+                <TextView
+                    android:id="@+id/midname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_weight="0.32"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/underline"
+                    android:textColor="#000000">
+
+
+                </TextView>
+                <TextView
+                    android:id="@+id/lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_weight="0.33"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/underline"
+                    android:textColor="#000000"
+                    >
+
+
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Contact Number"
+                />
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:textColor="#000000"
+                android:background="@drawable/underline"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Date of Birth"
+                android:background="@drawable/underline"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:id="@+id/bd"
+                    android:textColor="#000000"
+                android:background="@drawable/underline"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Nationality"
+                />
+            <TextView
+                android:id="@+id/nationality"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:textColor="#000000"
+                android:background="@drawable/underline"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Aadhar Card Number"
+
+                />
+            <TextView
+                android:id="@+id/aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:textColor="#000000"
+                android:background="@drawable/underline"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Religion"
+
+                />
+
+            <TextView
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"
+                android:textColor="#000000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Cast"
+
+                />
+            <TextView
+                android:id="@+id/cast"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:textColor="#000000"
+                android:background="@drawable/underline"
+
+              />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parents/Guardian Details"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Father Name"
+
+                />
+            <TextView
+                android:id="@+id/Fname"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"
+                android:textColor="#000000"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Father Cell Name"
+
+                />
+            <TextView
+                android:id="@+id/Fno"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Mother Name"
+
+                />
+            <TextView
+                android:id="@+id/Mname"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Mother Cell Name"
+
+                />
+            <TextView
+                android:id="@+id/MNum"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Local Guardian"
+
+                />
+            <TextView
+                android:id="@+id/guardian"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Local Guardian Cell Number"
+
+                />
+            <TextView
+                android:id="@+id/gnum"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="24sp"
+                 android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Permanent Address"
+
+                />
+            <TextView
+                android:id="@+id/Paddress"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="8sp"
+                    android:transitionName="logo_text"
+                    android:text="PinCode"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="City"
+                    android:textSize="8sp"
+                    android:transitionName="logo_text">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:id="@+id/pin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.49"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/underline"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/underline"
+                    />
+               </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Landline(if present)"
+
+                />
+            <TextView
+                android:id="@+id/Landl"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"
+                android:textColor="#000000"
+/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Emergency Contact Address"
+
+                />
+            <TextView
+                android:id="@+id/em"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Emergency Contact Number"
+
+                />
+            <TextView
+                android:id="@+id/ec"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Educational Details"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="College Enrollment Number"
+
+                />
+            <TextView
+                android:id="@+id/cno"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Major"
+
+                />
+            <TextView
+                android:id="@+id/major"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Year"
+
+                />
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical Details"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Allergy"
+
+                />
+            <TextView
+                android:id="@+id/allergy"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"
+                android:textColor="#000000"
+/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="BloodGroup"
+
+                />
+            <TextView
+                android:id="@+id/Blood"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"
+/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Name of Family Doctor"
+
+                />
+            <TextView
+                android:id="@+id/FDNa"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"
+                android:textColor="#000000"
+/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text"
+                android:text="Cell Number of Family Doctor"
+
+                />
+            <TextView
+                android:id="@+id/FDCN"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chronic disease"
+                    android:transitionName="logo_text"
+                    android:textSize="8sp"
+                    android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/chr"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disease with sudden treatment"
+                    android:textSize="8sp"
+                     />
+  </LinearLayout>
+            <TextView
+                android:id="@+id/sud"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"               android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skin disease"
+                    android:textSize="8sp" />
+   </LinearLayout>
+            <TextView
+                android:id="@+id/sk"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fear/Phobia"
+                    android:textSize="8sp" />
+ </LinearLayout>
+            <TextView
+                android:id="@+id/pho"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disability"
+                    android:textSize="8sp" />
+  </LinearLayout>
+            <TextView
+                android:id="@+id/dis"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/underline"               android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/pi_pu"
+                    android:text="Check Other"
+                    android:textColor="@android:color/white" />
+                <Button
+                    android:id="@+id/ret"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/pi_pu"
+                    android:text="Return"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

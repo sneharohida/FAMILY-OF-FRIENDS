@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin.AdminNightouts">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/li"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rec"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantora_one"
+                    android:text="NightOuts"
+                    android:textColor="@android:color/white"
+                    android:textSize="38dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp">
+
+                <TableRow
+
+                    android:id="@+id/firstRow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/simpleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#0B45F4"
+                        android:padding="18dip"
+                        android:text="UserID"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+
+                    <TextView
+
+                        android:id="@+id/simpleTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#C3FFFF"
+                        android:gravity="center"
+                        android:padding="18dip"
+                        android:text="LeftOn"
+                        android:textColor="#000"
+                        android:textSize="22dp" />
+                    <TextView
+
+                        android:id="@+id/simpleTextView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#C3FFFF"
+                        android:padding="18dip"
+                        android:text="Return Date"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

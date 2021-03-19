@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Initial.MainActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Initial.MainActivity"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="12dp">
+
+
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Welcome"
+            android:textSize="40sp"
+            android:transitionName="logo_text" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp to start a new journey"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textSize="24sp"
+                android:transitionName="logo_text">
+
+            </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:hint="First Name"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/midname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:hint="Middle Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:hint="Last Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:editable="false"
+    android:hint="Date of Birth"
+    android:id="@+id/bd"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nationality"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aadhar Card Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Religion">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cast"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Details"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:transitionName="logo_text">
+
+            </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:passwordToggleEnabled="true"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parents/Guardian Details"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:transitionName="logo_text">
+
+            </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Father Name"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Fno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Father Cell Number"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Mname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mother Name"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/MNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mother Cell Number"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/guardian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Local Guardian">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/gnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Local Guardian Cell Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text">
+
+            </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Paddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Permanent Address">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+   >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="Pincode">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="City">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Landl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Landline(if present)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/em"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Emergency Contact Address">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Emergency Contact Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Educational Details"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text">
+
+            </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="College Enrollment Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="#000000"
+                />
+            <Spinner
+                android:id="@+id/spin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="#000000"
+                />
+
+
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical Details"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                android:transitionName="logo_text">
+
+            </TextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Blood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="BloodGroup"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/FDNa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Name of Family Doctor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="#000000"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/FDCN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cell Number of Family Doctor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="#000000"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Do you have any Allergy?"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rga"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/aa"
+                        android:textSize="12dp"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="12dp"
+                        android:id="@+id/ab"
+                        />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/allergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Allergy(seperated by comma)"                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:text="Have you ever been diagnosed with any Chronic disease?"
+        android:textSize="15dp" />
+
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/rgc"
+           >
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Yes"
+           android:textSize="12dp"
+           android:id="@+id/cha"
+           />
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No"
+           android:textSize="12dp"
+           android:id="@+id/chb"
+           />
+       </RadioGroup>
+
+
+</LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/chr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Disease(seperated by comma)"                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Are you suffering from any disease which require sudden treatment?"
+                    android:textSize="15dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rgsd"
+                        >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="12dp"
+                        android:id="@+id/sda"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="12dp"
+                        android:id="@+id/sdb"
+                        />
+                    </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Disease(seperated by comma)"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Are you suffering from any skin disease?"
+                    android:textSize="15dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rgs"
+                        >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="12dp"
+                        android:id="@+id/sa"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="12dp"
+                        android:id="@+id/sb"
+                        />
+                    </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Disease(seperated by comma)"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Are you suffering from any fear/Phobia?"
+                    android:textSize="15dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rgp"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:textSize="12dp"
+                            android:id="@+id/pha"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:textSize="12dp"
+                            android:id="@+id/phb"
+                            />
+                    </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of Phobia(seperated by comma)"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Are you suffering from any disability?"
+                    android:textSize="15dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rgd"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:textSize="12dp"
+                            android:id="@+id/da"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:textSize="12dp"
+                            android:id="@+id/db"
+                            />
+                    </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Disability Name(seperated by comma)"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <!--<ImageButton
+                    android:id="@+id/image_button_android"
+                    android:layout_width="120dp"
+                    android:layout_height="88dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#000000"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.23000002"
+                    app:srcCompat="@drawable/logo" />
+-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="70dp"
+                    android:gravity="center_horizontal"
+                    android:text="Upload Photo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+
+            <!--<ImageButton
+                android:id="@+id/test"
+                android:layout_width="120dp"
+                android:layout_marginTop="50dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#000000"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.23000002"
+                 />-->
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/black"
+                android:text="Sign Up"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

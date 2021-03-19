@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="15dp"
+    tools:context=".Poll.FestMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<com.example.s3.Grid.RadioGrid
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    >
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:weightSum="1">
+    <RadioButton
+        android:id="@+id/one"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="0.49"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:button="@null"
+        android:background="@drawable/rbback"
+        />
+    <RadioButton
+        android:id="@+id/two"
+        android:layout_width="0dp"
+        android:button="@null"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="0.49"
+        android:background="@drawable/rb2"
+        />
+</TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Pav Bhaji"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Misal Pav"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <RadioButton
+            android:id="@+id/th"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.49"
+            android:background="@drawable/rb3"
+            android:button="@null"
+
+            />
+        <RadioButton
+            android:id="@+id/fo"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.49"
+            android:background="@drawable/rb4"
+            android:button="@null"
+
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Masala Dosa"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Chinese"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+
+        android:weightSum="1">
+        <RadioButton
+            android:id="@+id/fi"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.49"
+            android:background="@drawable/rb5"
+            android:button="@null"
+
+            />
+        <RadioButton
+            android:id="@+id/si"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.49"
+            android:background="@drawable/rb6"
+            android:button="@null"
+
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Chole Bhature"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Pani Puri"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <RadioButton
+            android:id="@+id/sev"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.49"
+            android:background="@drawable/rb7"
+            android:button="@null"
+
+            />
+        <RadioButton
+            android:id="@+id/ei"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.49"
+            android:background="@drawable/rb8"
+            android:button="@null"
+
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Mix Sabji"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Ragada Pattice"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+
+            android:textAlignment="center"
+            android:layout_weight="0.49"/>
+    </TableRow>
+
+    </com.example.s3.Grid.RadioGrid>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:id="@+id/Submit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/pi_pu"/>
+    </LinearLayout>
+</ScrollView>

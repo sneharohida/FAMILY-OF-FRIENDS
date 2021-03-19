@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="300dp"
+    android:layout_margin="10sp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/mv_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/party"
+            />
+
+        <TextView
+            android:id="@+id/mv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/mv_image"
+            android:layout_toRightOf="@id/mv_image"
+            android:fontFamily="@font/baloo"
+            android:lineHeight="20dp"
+            android:text="Amjad"
+            android:textColor="#272727"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asbkd asudhlasn saudnas jasdjasl hisajdl asjdlnas"
+            android:layout_below="@id/mv_title"
+            android:layout_toRightOf="@id/mv_image"
+            android:padding="10dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

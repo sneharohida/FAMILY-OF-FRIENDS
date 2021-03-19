@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ctr_bg"
+
+    tools:context=".Complaint.ComplaintDetail">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#FA4005"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/ctr_bg"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:id="@+id/coltoolbar"
+            >
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/bungee"
+                android:hint="Category"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/subcategory"
+                android:hint="SubCategory"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/bungee"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="135dp"
+                />
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/im"
+                android:layout_gravity="center|end"
+                />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lay_bg"
+        android:padding="20dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent"
+                android:transitionName="logo_text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="8sp"
+                        android:transitionName="logo_text"
+                        android:text="HostelNum"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="FloorNum"
+                        android:textSize="8sp"
+                        android:transitionName="logo_text">
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/hos_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gen"
+                       android:layout_weight="0.5"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                       />
+
+
+
+                    <TextView
+                        android:id="@+id/floor_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gen"
+                        android:layout_weight="0.5"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:textSize="8sp"
+                        android:transitionName="logo_text"
+                        android:text="Room Num"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:text="Mess Num"
+                        android:textSize="8sp"
+                        android:transitionName="logo_text">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:text="Washroom Num"
+                        android:textSize="8sp"
+                        android:transitionName="logo_text">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/room_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gen"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.37"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/mess_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gen"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.28"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/washroom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gen"
+                        android:layout_margin="1dp"
+                       android:layout_weight="0.4"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                       />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Staff Details"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="20dp"
+                    android:transitionName="logo_text"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="8sp"
+                        android:transitionName="logo_text"
+                        android:text="Name"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Role"
+                        android:textSize="8sp"
+                        android:transitionName="logo_text">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/staffname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gen"
+                        android:layout_weight="0.5"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/staffrole"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gen"
+                        android:layout_weight="0.5"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Description"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/colorAccent"
+                    android:transitionName="logo_text"/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/gen"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:hint="Description"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
